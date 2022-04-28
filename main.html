@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume Builder</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="form.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    
+
+</head>
+<body class="all">
+    <nav>
+        <div class="left">
+            <ul>
+                <img src="logo-removebg-preview.png" alt="">
+                <li><a>MyResume Builder</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact US</a></li>
+                <li><a href="#contact">Help</a></li>
+                <li><a class="login-btn" id="login">Login</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    
+    <div class="home" id="home">
+        <div class="mainbox">
+            <div class="main">
+
+            hello
+                <div class="header">
+                    <h3>Welcome To MyResume Builder</h3>
+                </div>
+                <div class="text">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                    2000.</p>
+                </div>
+                <div class="options">
+                        <div class="button1" >
+                            <a href="register.html">
+                                <input  type="submit"  value="Create Your Resume" >
+                            </a>
+                            
+                        </div>
+                </div>
+            </div>
+
+            
+
+            
+        
+        </div>
+        <div class="imagef">
+                <img src="isometric-business-concepts-recruiting-vector-25079416-removebg-preview.png" alt="">
+            </div>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ3_SOmb52gA7kpISJbBs-dekTgvRCX_QjUw&usqp=CAU" alt="">
+        
+    </div>
+
+    <div class="need">
+        <img src="word-cloud-1758159__480.webp" alt="">
+        <div class="databox">
+            <h3>How our online CV builder helps you make a professional CV fast and easy:</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                2000 years old.</p>
+        </div>
+    
+    </div>
+
+    <div class="steps">
+        <img src="Screenshot (90).png" alt="">
+    </div>
+
+    
+
+    <div class="whymyresume">
+        <img src="resume-removebg-preview.png" alt="">
+        <div class="databox">
+            <h3>Make a CV that stands out</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                2000 years old.</p>
+        </div>
+
+    </div>
+    
+
+    
+
+    
+
+
+
+
+
+
+    <div class="reviews" id="reviews">
+        <div class="head">
+            <h3>Read What Our Customers Says About us</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+            
+        </div>
+        
+        <!--data-flickity='{ "groupCells" : true ,"autoPlay":true  }'-->
+        <div  class="carousel" data-flickity='{ "groupCells" : true , "autoPlay" : true , "freescroll" : true }'>
+            <div class="box">
+                <div class="user">
+                    <img src="899048ab0cc455154006fdb9676964b3.jpg" alt="">
+                </div>
+                
+                <img src="stars-removebg-preview.png" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.  - Abhinav Shambharkar</p>                
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="899048ab0cc455154006fdb9676964b3.jpg" alt="">
+                </div>
+                <img src="stars-removebg-preview.png" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.  - Abhinav Shambharkar</p>
+                 
+                
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="899048ab0cc455154006fdb9676964b3.jpg" alt="">
+                </div>
+                <img src="stars-removebg-preview.png" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.  - Abhinav Shambharkar</p>  
+                
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="899048ab0cc455154006fdb9676964b3.jpg" alt="">
+                </div>
+                <img src="stars-removebg-preview.png" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.  - Abhinav Shambharkar</p>  
+                
+            </div>
+            <div class="box">
+                <div class="user">
+                    <img src="899048ab0cc455154006fdb9676964b3.jpg" alt="">
+                </div>
+                <img src="stars-removebg-preview.png" alt="">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua.  - Abhinav Shambharkar</p>  
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>MyResume Builder</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 
+                2000 years old.</p>
+
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">MyResume Builder</a>  </p>
+         </div>
+    </footer>
+
+
+    <div class="login-box animate" >
+        <div class="contentbox">
+            <div class="close">
+                <a id="close">X</a>
+            </div>
+            <form action="login.php" method="post" enctype='multipart/form-data'>
+            <div class="formbox">
+
+                <img src="899048ab0cc455154006fdb9676964b3.jpg
+                " alt="">
+                <h2>Login</h2>
+                <div id="loginform">
+                    <div class="inputbox">
+                        
+                        <input type="text" id="email" placeholder="Username/Email"name="username" required>
+                    </div>
+                    
+                    <div class="inputbox">
+                        
+                        <input type="password" id="password" placeholder="Password" name="password" required>
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    </div>
+                    <div class="login">
+                        <div class="inputbox">
+                            <button id="login"   name="login">Login</button>
+                        </div>
+                    </div>
+                    
+                    <div class="bottom">
+                        <div class="inputbox">
+                            <a href="forget.html">forget password ?</a>
+                        </div>
+                        <div class="inputbox">
+                            <a href="register.html" style="cursor: pointer;" >Dont Have An Account? Sign Up</a>
+                        </div>
+                        
+                        
+                    </div>
+                </div> 
+            </form>           
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
+
+    <script>
+            var mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+    <script>
+        document.getElementById("login").addEventListener("click",function(){
+            document.querySelector(".login-box").style.display = "flex";
+            document.querySelector(".home").style.opacity= "0.8";
+            
+            
+        })
+        document.getElementById("close").addEventListener("click",function(){
+            document.querySelector(".login-box").style.display = "none";
+            
+            document.querySelector(".home").style.opacity = "1";
+        
+        })
+    </script>
+
+<!--
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+    import { getDatabase ,set , ref,update} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword ,signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDdfKee00GvOk8K_G0o9vNVxdkNUr7hnRw",
+      authDomain: "fir-3-f9e55.firebaseapp.com",
+      databaseURL: "https://fir-3-f9e55-default-rtdb.firebaseio.com",
+      projectId: "fir-3-f9e55",
+      storageBucket: "fir-3-f9e55.appspot.com",
+      messagingSenderId: "739238601281",
+      appId: "1:739238601281:web:f59cbdedd8cf539a0e9cc0"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+    
+    
+    login1.addEventListener('click',(e)=>{
+
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+                signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+
+                    const dt = new Date();
+                    update(ref(database, 'users/' + user.uid),{
+                    last_login: dt,
+                    })
+                    window.open ('create.html','_self',false)
+
+                    alert('User loged in!');
+                    
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+
+                    alert(errorMessage);
+                });
+
+    });
+-->
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+togglePassword.addEventListener("click", function () {
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+    this.classList.toggle("bi-eye");
+});
+
+
+
+  </script>
+
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+
+        
+        
+
+
+</body>
+</html>

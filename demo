@@ -1,0 +1,281 @@
+<div class="box">
+        <div class="top">
+            <h3>Education & Qualifications</h3><hr>
+        </div>
+        <form action="skills.html">
+            
+            <div class="data2">
+                <div class="inputbox">
+                    <input type="text" placeholder="College/University" >
+                </div>
+                <div class="inputbox">
+                    <input type="text" placeholder="Duration(eg.2019-2023)" >
+                </div>
+            </div>
+            <div class="data3">
+                <div class="inputbox">
+                    <input type="text" placeholder="Description(eg.B-Tech Information Technology)" >
+                </div>
+
+            </div>
+            <div class="add">
+                <div class="inputbox">
+                    <input type="text" value="+Add Another" >
+                </div>
+            </div>
+
+            <div class="edu1">
+                <div class="data2">
+                    <div class="inputbox">
+                        <input type="text" placeholder="College/University" >
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Duration(eg.2019-2023)" >
+                    </div>
+                </div>
+                <div class="data3">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Description(eg.B-Tech Information Technology)" >
+                    </div>
+    
+                </div>
+                <div class="add">
+                    <div class="inputbox">
+                        <input type="text" value="+Add Another"  >
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu2">
+                <div class="data2">
+                    <div class="inputbox">
+                        <input type="text" placeholder="College/University" >
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Duration(eg.2019-2023)" >
+                    </div>
+                </div>
+                <div class="data3">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Description(eg.B-Tech Information Technology)" >
+                    </div>
+    
+                </div>
+                
+            </div>
+
+
+
+
+            <div class="top">
+                <h3>Work Experience</h3><hr>
+            </div>
+
+            <div class="data2">
+                <div class="inputbox">
+                    <input type="text" placeholder="Job Profile" >
+                </div>
+                <div class="inputbox">
+                    <input type="text" placeholder="Start-date / End-date" >
+                </div>
+            </div>
+            <div class="data3">
+                <div class="inputbox">
+                    <input type="text" placeholder="Description" >
+                </div>
+
+            </div>
+            <div class="add">
+                <div class="inputbox">
+                    <input type="text" value="+Add Another"  >
+                </div>
+            </div>
+
+            <div class="work1">
+                <div class="data2">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Job Profile" >
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Start-date / End-date" >
+                    </div>
+                </div>
+                <div class="data3">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Description" >
+                    </div>
+    
+                </div>
+                <div class="add">
+                    <div class="inputbox">
+                        <input type="text" value="+Add Another"  >
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="work2">
+                <div class="data2">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Job Profile" >
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Start-date / End-date" >
+                    </div>
+                </div>
+                <div class="data3">
+                    <div class="inputbox">
+                        <input type="text" placeholder="Description" >
+                    </div>
+    
+                </div>
+                
+                
+            </div>
+
+
+            
+
+            <div class="next">
+                <input type="submit" value="Next" >
+            </div>
+
+
+
+        </form>
+        
+        
+    </div>
+
+
+
+
+    <div class="box">
+        <div class="top">
+            <h3>Skills</h3><hr>
+        </div>
+        <form action="skills.html">
+            
+            <div class="data2">
+                <div class="inputbox">
+                    <input type="text" placeholder="College/University" >
+                </div>
+                <div class="inputbox">
+                    <input type="text" placeholder="Duration(eg.2019-2023)" >
+                </div>
+            </div>
+            <div class="data3">
+                <div class="inputbox">
+                    <input type="text" placeholder="Description(eg.B-Tech Information Technology)" >
+                </div>
+
+            </div>
+            <div class="add">
+                <div class="inputbox">
+                    <input type="text" value="+Add Another" >
+                </div>
+            </div>
+
+           
+
+            
+
+
+
+
+            <div class="top">
+                <h3>Achievements</h3><hr>
+            </div>
+
+            <div class="data2">
+                <div class="inputbox">
+                    <input type="text" placeholder="Job Profile" >
+                </div>
+                <div class="inputbox">
+                    <input type="text" placeholder="Start-date / End-date" >
+                </div>
+            </div>
+            <div class="data3">
+                <div class="inputbox">
+                    <input type="text" placeholder="Description" >
+                </div>
+
+            </div>
+            <div class="add">
+                <div class="inputbox">
+                    <input type="text" value="+Add Another"  >
+                </div>
+            </div>
+
+            
+
+            
+
+
+            
+
+            <div class="next">
+                <input type="submit" value="Next" >
+            </div>
+
+
+
+        </form>
+        
+        
+    </div>
+
+
+    <div class="features">
+        <img src="https://media.istockphoto.com/photos/boss-holding-resume-cv-paper-interviewing-vacancy-candidature-image-picture-id1132941031?k=20&m=1132941031&s=612x612&w=0&h=sfeDw-je127obnvoL7AOD4pRWNQBPfBws0iXNMihoss=" alt="">
+</div>
+
+<div class="need">
+<img src="resumes-templates.png" alt="">
+<div class="databox">
+    <h3>How our online CV builder helps you make a professional CV fast and easy:</h3>
+    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 
+        2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text. 
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 
+        2000 years old.</p>
+</div>
+
+</div>
+
+<div class="need">
+    <img src="Profile data-bro.png" alt="">
+    <div class="databox">
+        <h3>Make a CV that stands out</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 
+            2000 years old.Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            It has roots in a piece of classical Latin literature from 45 BC, making it over 
+            2000 years old.</p>
+    </div>
+
+</div>
+
+
+<!--
+    <div class="videos">
+        <h3>Videos which may help you</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <iframe width="350" height="230"
+        src="https://www.youtube.com/embed/y8YH0Qbu5h4">
+        </iframe>
+
+        <iframe width="350" height="230"
+        src="https://www.youtube.com/embed/KZehm-meGMg">
+        </iframe>
+
+        <iframe width="350" height="230"
+        src="https://www.youtube.com/embed/KZehm-meGMg">
+        </iframe>
+
+        <div class="buttons">
+            <a href="https://www.youtube.com/results?search_query=how+to+build+resume+for+freshers" class="login-btn">More videos</a>
+
+        </div>
+    </div>
+-->

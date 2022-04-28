@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="templates.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+
+</head>
+<body id="body">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo-removebg-preview.png" alt="">
+                    
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">MyResume</span>
+                    <span class="profession"> Builder</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                    
+
+                    
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Create Another</span>
+                        </a>
+                    </li>
+
+                    
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">My creations </span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">My creations </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home" id="home">
+        <div class="text">Select Templates</div>
+
+
+        <div class="box">
+            <div class="tmp">
+                <div class="box1">
+                    <img id="#tmp1" src="https://www.goodcv.com/images/cv/screenshots/thumbs/en/outstanding_10.png?v=1.0.1" alt="">
+                </div>
+                <div class="box1">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cv-resume-template-design-fe8f483e8f65bd1e12f05a6dbe7527e6_screen.jpg?ts=1637013875" alt="">
+                </div>
+                <div class="box1">
+                    <img src="https://www.cv-template.com/img/choose-template/t4-orange.jpg" alt="">
+                </div>
+                
+            </div>
+            <div class="tmp">
+                <div class="box1">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/resume-cv-template-design-ac27a81b24026feafa96968149b9ef69_screen.jpg?ts=1637051896" alt="">
+                </div>
+                <div class="box1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Kbog9YxLxeFfsicizWEwderx_dcYYVctFQ&usqp=CAU" alt="">
+                </div>
+                <div class="box1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKCXUyB-nPLTexKp9Z0ucvO9o2B6Pz2sK4w&usqp=CAU" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+    <div id="loader" class="loader">
+        <img src="Curve-Loading.gif" alt="">
+        <h3>Loading.....</h3>
+    </div>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+</script>
+    
+<script>
+    document.getElementById("#tmp1").addEventListener("click",function(){
+        document.querySelector("#home").style.opacity = 0.1;
+        document.querySelector("#loader").style.display = "block";
+    })
+
+    setTimeout(() => {
+        window.location.href = 'template.php';
+    
+
+    },5000); 
+</script>
+
+  
+
+</body>
+</html>

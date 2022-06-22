@@ -7,22 +7,21 @@
     <title>MyResume Builder</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="../css/create.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
 </head>
 <?php
-                            
-                    
+              
     include_once("config.php");
+    error_reporting(E_ERROR);
+    session_start();
     $username=$_SESSION["username"];
 
     $stmt = $db->prepare("SELECT * FROM users WHERE email=?");
     $stmt->execute([$username]); 
-    $user = $stmt->fetch();
-
-                            
+    $user = $stmt->fetch();                        
 ?>
 <body>
     <nav>
@@ -30,7 +29,7 @@
     
         <div class="left">
             <ul>
-                <img src="image (2).png" alt="">
+                <img src="../Images-used/image (2).png" alt="">
                 <li><a>MyResume Builder</a></li>
             </ul>
         </div>
@@ -42,6 +41,8 @@
         </div>
         
     </nav>
+
+    
     <div class="figure">
         
 
@@ -49,7 +50,7 @@
     <div class="progress">
         <div class="personal">
             <div class="one1">
-                <span class="indicator"><img src="man.png" alt=""></span><br><br>
+                <span class="indicator"><img src="../Images-used/man.png" alt=""></span><br><br>
                 <span class="title">Personal</span>
                 
 
@@ -57,7 +58,7 @@
         </div>
         <div class="personal">
             <div class="one">
-                <span class="indicator"><img src="education.png" alt=""></span><br><br>
+                <span class="indicator"><img src="../Images-used/education.png" alt=""></span><br><br>
                 <span class="title">Education</span>
                 
             </div>
@@ -72,7 +73,7 @@
         
         <div class="personal">
             <div class="one">
-                <span class="indicator"><img src="cv.png" alt=""></span><br><br>
+                <span class="indicator"><img src="../Images-used/cv.png" alt=""></span><br><br>
                 <span class="title">Templates</span>
                 
             </div>
@@ -130,10 +131,8 @@
 
 
             <div class="next">
-                <input href="education.php" type="submit" name="next1" value="Next" >
+                <input href="education.php" type="submit" name="next1" value="Save & Next" >
             </div>
-
-
 
         </form>
         
@@ -159,14 +158,15 @@
     </div>
     <div class="content">
         <ul>
-            <a href="profile.html"><li>Profile</li></a>
-            <a><li>My Creations</li></a>
-            <a href="drafts.html"><li>Drafts</li></a>
+            <a href="../PHP/profile.php"><li>Profile</li></a>
+            <a href="../PHP/creations.php"><li>My Creations</li></a>
+            <a href="../PHP/drafts.php"><li>Drafts</li></a>
             <a><li>Help</li></a>
-            <a href="main.html"><li>Logout</li></a>
+            <a href="../Html/main.html"><li>Logout</li></a>
         </ul>
     </div>
 </div>
+
  
 <footer>
     <div class="footer-content">

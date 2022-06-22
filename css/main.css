@@ -621,7 +621,7 @@ footer{
     
 }
 .register-box .contentbox{
-    height: 550px;
+    height: 650px;
     width: 550px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -783,3 +783,33 @@ footer{
     from {transform: scale(0)} 
     to {transform: scale(1)}
   }
+
+.text a{
+    margin-left: 160px;
+    padding-top: 40px;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Select file';
+    display: inline-block;
+    background: linear-gradient(top, #ac6565, #e3e3e3);
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13pt;
+    width: 20%;
+    text-align: center;
+    background-color: #47A7D7;
+    color: white;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+ 

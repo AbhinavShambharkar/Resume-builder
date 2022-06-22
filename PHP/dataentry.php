@@ -33,9 +33,13 @@ if(isset($_POST['next1'])){
     $stmt->execute([$username,$code,$firstname,$lastname,$photo_name,$email,$phonenumber,$Address,$link1,$git,$objective]);
 
     if($stmt){
-        include 'education.php';
+        include '../PHP/education.php';
     }
 
+}
+
+if(isset($_POST['back'])){
+    include '../PHP/create.php';
 }
 
 /* education */
@@ -105,7 +109,7 @@ if(isset($_POST['next2'])){
     $stmt->execute([$username,$codes,$cllg,$fromto,$about,$cllg1,$fromto1,$about1,$cllg2,$fromto2,$about2,$job,$dur,$aboutj,$job1,$dur1,$aboutj1,$job2,$dur2,$aboutj2]);
 
     if($stmt){
-        include 'skills.php';
+        include '../PHP/skills.php';
     }
 
 }
@@ -125,17 +129,18 @@ if(isset($_POST['next3'])){
     error_reporting(0);
     session_start();
     $username=$_SESSION["username"];
+
     $codes=$_SESSION["codes"];
 
     
 
 
-    $sql = "INSERT INTO skills (skill1, skill2, ach1,ach2,hob1,hob2) VALUES (?,?,?,?,?,?)";
+    $sql = "INSERT INTO skills (user,code,skill1, skill2, ach1,ach2,hob1,hob2) VALUES (?,?,?,?,?,?,?,?)";
     $stmt= $db->prepare($sql);
-    $stmt->execute([$skill1,$skill2,$ach1,$ach2,$hob1,$hob2]);
+    $stmt->execute([$username,$codes,$skill1,$skill2,$ach1,$ach2,$hob1,$hob2]);
 
     if($stmt){
-        include 'templates.html';
+        include '../Html/templates.html';
     }
 
 }

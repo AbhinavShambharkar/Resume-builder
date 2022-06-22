@@ -8,7 +8,10 @@
 	<meta name="description" content="" />
 
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
-	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../css/resume.css" media="all" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
 
 </head>
 <body>
@@ -37,6 +40,7 @@
     $stmt = $db->prepare("SELECT * FROM skills WHERE code=?");
     $stmt->execute([$codes]); 
     $skills = $stmt->fetch(); 
+
 ?>
 
 <div id="doc2" class="yui-t7">
@@ -46,7 +50,7 @@
 			<div class="yui-gc">
 				<div class="yui-u first">
 					<h1><?php echo '<span >' . $personal['firstname'] . '</span>';?>   <?php echo '<span >' . $personal['lastname'] . '</span>';?></h1>
-					<h2>Web Designer, Director</h2>
+					<h2>Web Designer</h2>
 				</div>
 
 				<div class="yui-u">
@@ -75,29 +79,7 @@
 						</div>
 					</div><!--// .yui-gf -->
 
-					<div class="yui-gf">
-						<div class="yui-u first">
-							<h2>Skills</h2>
-						</div>
-						<div class="yui-u">
-
-								<div class="talent">
-									<h2>Web Design</h2>
-									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
-								</div>
-
-								<div class="talent">
-									<h2>Interface Design</h2>
-									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
-								</div>
-
-								<div class="talent">
-									<h2>Project Direction</h2>
-									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
-								</div>
-						</div>
-					</div><!--// .yui-gf -->
-
+					
 					<div class="yui-gf">
 						<div class="yui-u first">
 							<h2>Education</h2>
@@ -110,13 +92,39 @@
 							<h2><?php echo '<span >' . $education['about1'] . '</span>';?></h2>
 							<h3><?php echo '<span >' . $education['cllg1'] . '</span>';?>  <?php echo str_repeat('&nbsp;', 5); echo '<span >' . $education['fromto1'] . '</span>';?></h3>
 						</div>
-						<div class="yui-u">
-							<h2><?php echo '<span >' . $education['about2'] . '</span>';?></h2>
-							<h3><?php echo '<span >' . $education['cllg2'] . '</span>';?>  <?php  echo str_repeat('&nbsp;', 5); echo '<span >' . $education['fromto2'] . '</span>';?></h3>
-						</div>
+						
+						
 					</div><!--// .yui-gf -->
 
 					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+
+								<div class="talent">
+									<h2>Skills</h2><br>
+									<p>	<?php echo '<span >' . $skills['skill1'] . '</span>';?></p><br>
+									<p>	<?php echo '<span >' . $skills['skill2'] . '</span>';?></p>
+								</div>
+
+								<div class="talent">
+									<h2>Achievements</h2><br>
+									<p>	<?php echo '<span >' . $skills['ach1'] . '</span>';?></p><br>
+									<p>	<?php echo '<span >' . $skills['ach2'] . '</span>';?></p>
+								</div>
+
+								<div class="talent">
+									<h2>Hobbies</h2><br>
+									<p>	<?php echo '<span >' . $skills['hob1'] . '</span>';?></p><br>
+									<p>	<?php echo '<span >' . $skills['hob2'] . '</span>';?></p>
+
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
+
+
+					<div class="yui-gf exp">
 	
 						<div class="yui-u first">
 							<h2>Experience</h2>
@@ -145,26 +153,7 @@
 					
 
 
-					<div class="yui-gf">
-						
-						<div class="yui-u">
-
-								<div class="talent">
-									<h2 class="top" >Technical </h2>
-									<h3><?php echo '<span >' . $skills['skill1'] . '</span>';?></h3>
-									<h3><?php echo '<span >' . $skills['skill2'] . '</span>';?></h3>
-
-								</div>
-
-								<div class="talent">
-									<h2>Hobbies </h2>
-									<h3><?php echo '<span >' . $skills['hob1'] . '</span>';?></h3>
-									<h3><?php echo '<span >' . $skills['hob2'] . '</span>';?></h3>
-									
-								</div>
-
-						</div>
-					</div><!--// .yui-gf -->
+					
 
 
 				</div><!--// .yui-b -->
@@ -180,6 +169,19 @@
 
 </div><!--// doc -->
 
+<div id="ignorePDF" class="noprint">
+	<form action="../Html/templates.html"><input  class="back" type="submit" name="back" value="Back" ></form>
+	
+	<div><input  onclick="window.print()"  type="submit" name="next1" value="Download" ></div>
+
+</div>
+
+
+<script>
+
+
+		
+</script>
 
 </body>
 </html>

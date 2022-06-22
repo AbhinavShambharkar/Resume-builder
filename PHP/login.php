@@ -13,7 +13,7 @@ if(isset($_POST['login'])){
     $count = $stmt->fetch(PDO::FETCH_ASSOC);
     
     if(!empty($count)){
-        include 'create.php';
+        include '../PHP/create.php';
         
         ?>
             <script>

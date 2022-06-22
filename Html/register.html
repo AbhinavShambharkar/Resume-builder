@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyResume Builder| Register</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    
+
+</head>
+<body style="background:skyblue;">
+    
+
+<div class="register-box" >
+    <div class="contentbox">
+        <div class="formbox">
+
+            <img src="../Images-used/899048ab0cc455154006fdb9676964b3.jpg
+            " alt="">
+            <h2>Register</h2>
+            <form action="../PHP/register.php" method="post" enctype='multipart/form-data'>
+                <div class="inputbox">
+                    
+                    <input type="text" placeholder="Name" id="fullname" name="fullname" required>
+                </div>
+                <div class="inputbox">
+                    
+                    <input type="text" placeholder="Email" id="email" name="email" required>
+                </div>
+
+                <div class="inputbox">
+                    <input type="file" class="custom-file-input" placeholder="Enter your passport size photo" name="photo" required >
+                </div>
+                
+                <div class="inputbox">
+                    
+                    <input type="password" placeholder="Password" id="password" name="password" required>
+                </div>
+
+                <div class="inputbox">
+                    
+                    <input type="password" placeholder="Confirm Password" name="password" required>
+                </div>
+                <div class="login">
+                    <div class="inputbox">
+                        <button  id="register"  value="Register" name="register">Register</button>
+                    </div>
+                </div>
+                <div class="text" style="margin-top:15px; font-size: 20px;"><a href="main.html">Already an user ?? Sign In</a></div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

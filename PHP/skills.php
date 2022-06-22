@@ -7,15 +7,13 @@
     <title>MyResume Builder</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="../css/skills.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
 </head>
 <?php
-                   
-    
-                   
+                              
     session_start();                
     include_once("config.php");
     $username=$_SESSION["username"];
@@ -28,11 +26,9 @@
 ?>
 <body>
     <nav>
-
-    
         <div class="left">
             <ul>
-                <img src="image (2).png" alt="">
+                <img src="../Images-used/image (2).png" alt="">
                 <li><a>MyResume Builder</a></li>
             </ul>
         </div>
@@ -51,7 +47,7 @@
     <div class="progress">
         <div class="personal">
             <div class="one1">
-                <span class="indicator"><img src="man.png" alt=""></span><br><br>
+                <span class="indicator"><img src="../Images-used/man.png" alt=""></span><br><br>
                 <span class="title">Personal</span>
                 
 
@@ -59,7 +55,7 @@
         </div>
         <div class="personal">
             <div class="one1">
-                <span class="indicator"><img src="education.png" alt=""></span><br><br>
+                <span class="indicator"><img src="../Images-used/education.png" alt=""></span><br><br>
                 <span class="title">Education</span>
                 
             </div>
@@ -74,7 +70,7 @@
         
         <div class="personal">
             <div class="one">
-                <span class="indicator"><img src="cv.png" alt=""></span><br><br>
+                <span class="indicator"><img src="../Images-used/cv.png" alt=""></span><br><br>
                 <span class="title">Templates</span>
                 
             </div>
@@ -141,7 +137,12 @@
             
             
             <div class="next">
-                <input type="submit" value="Next" name="next3">
+                <div class="one">
+                    <input href="..PHP/create.php" type="submit" name="back1" value="Back" >
+                </div>
+                <div class="two">
+                    <input type="submit" value="Save & Next" name="next3">
+                </div>
             </div>
 
 

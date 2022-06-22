@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="templates.css">
+    <link rel="stylesheet" href="../css/drafts.css">
+    <link rel="stylesheet" href="../css/profile.css">
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
 
 </head>
-<body id="body">
+<body>
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="logo-removebg-preview.png" alt="">
-                    
+                    <img src="../Images-used/logo-removebg-preview.png" alt="">
                 </span>
 
                 <div class="text logo-text">
@@ -35,18 +35,15 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="../PHP/profile.php">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Profile</span>
                         </a>
                     </li>
 
-                    
-
-                    
-
+                
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="../PHP/create.php">
                             <i class='bx bx-pie-chart-alt icon' ></i>
                             <span class="text nav-text">Create Another</span>
                         </a>
@@ -55,15 +52,15 @@
                     
 
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="../PHP/creations.php">
                             <i class='bx bx-wallet icon' ></i>
                             <span class="text nav-text">My creations </span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="../PHP/drafts.php">
                             <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">My creations </span>
+                            <span class="text nav-text">My Drafts</span>
                         </a>
                     </li>
 
@@ -72,7 +69,7 @@
 
             <div class="bottom-content">
                 <li class="">
-                    <a href="#">
+                    <a href="../html/main.html">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Logout</span>
                     </a>
@@ -83,44 +80,63 @@
 
     </nav>
 
-    <section class="home" id="home">
-        <div class="text">Select Templates</div>
+
+    <?php
+        error_reporting(0);
+        session_start();
+        include_once("config.php");
+        $username=$_SESSION["username"];
+
+        $stmt = $db->prepare("SELECT * FROM users WHERE email=?");
+        $stmt->execute([$username]); 
+        $user = $stmt->fetch();
+
+        $image = "<img src='../image/".$user["photo"]."'>";
 
 
-        <div class="box">
-            <div class="tmp">
-                <div class="box1">
-                    <img id="#tmp1" src="https://www.goodcv.com/images/cv/screenshots/thumbs/en/outstanding_10.png?v=1.0.1" alt="">
-                </div>
-                <div class="box1">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cv-resume-template-design-fe8f483e8f65bd1e12f05a6dbe7527e6_screen.jpg?ts=1637013875" alt="">
-                </div>
-                <div class="box1">
-                    <img src="https://www.cv-template.com/img/choose-template/t4-orange.jpg" alt="">
-                </div>
+    ?>
+
+    <section class="home">
+        <div class="text">My Profile</div>
+        <div class="container d-flex justify-content-center align-items-center">
+             
+             <div class="card">
+
+              <div class="upper">
+
+                <img src="https://i.imgur.com/Qtrsrk5.jpg" class="img-fluid">
                 
-            </div>
-            <div class="tmp">
-                <div class="box1">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/resume-cv-template-design-ac27a81b24026feafa96968149b9ef69_screen.jpg?ts=1637051896" alt="">
-                </div>
-                <div class="box1">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Kbog9YxLxeFfsicizWEwderx_dcYYVctFQ&usqp=CAU" alt="">
-                </div>
-                <div class="box1">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZKCXUyB-nPLTexKp9Z0ucvO9o2B6Pz2sK4w&usqp=CAU" alt="">
-                </div>
-            </div>
-            
-        </div>
+              </div>
 
-        
+              <div class="user text-center">
+
+                <div class="profile">
+                    <a class="rounded-circle" width="100"><?php echo "$image"; ?></a>
+                
+                </div>
+
+              </div>
+
+
+              <div class="data text-center">
+
+                <h4 class="mb-0"><?php echo '<span >' . $user['fullname'] . '</span>';?></h4>
+
+                
+                <h3 class="mb-0">Email : <?php echo '<span >' . $user['email'] . '</span>';?></h3>
+                
+
+                <button class="btn btn-primary btn-sm follow change">Change Password</button>
+
+
+                
+                
+              </div>
+               
+             </div>
+
+           </div>
     </section>
-
-    <div id="loader" class="loader">
-        <img src="Curve-Loading.gif" alt="">
-        <h3>Loading.....</h3>
-    </div>
 
     <script>
         const body = document.querySelector('body'),
@@ -136,21 +152,45 @@ toggle.addEventListener("click" , () =>{
 })
 
 </script>
-    
-<script>
-    document.getElementById("#tmp1").addEventListener("click",function(){
-        document.querySelector("#home").style.opacity = 0.1;
-        document.querySelector("#loader").style.display = "block";
-    })
-
-    setTimeout(() => {
-        window.location.href = 'template.php';
-    
-
-    },5000); 
-</script>
-
-  
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
